@@ -1,0 +1,153 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FC7ACD;
+    color: #000000;
+    position: relative;
+    overflow: auto; /* Ensure scrolling is enabled */
+    padding: 0; /* Remove any unwanted body padding */
+}
+
+#header {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding-top: 20px; /* Reduced the padding at the top */
+    padding-bottom: 20px; /* Add some padding at the bottom */
+    margin-top: 0; /* Ensure no extra space at the top */
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 0; /* Ensure no extra margin above the nav */
+}
+
+.logo {
+    width: 140px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #ffff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #c24040;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+#interactive-title {
+    font-size: 60px;
+    text-align: center;
+    margin-top: 20px; /* Reduced space between the title and the top */
+    font-weight: bold;
+    font-family: 'Times New Roman', serif;
+    color: #DB48A5;
+    text-shadow: 3px 3px 5px rgba(255, 255, 255, 0.7);
+}
+
+.paragraph {
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+
+#flying-butterfly {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 50px;
+    height: auto;
+    animation: fly 10s linear infinite;
+    transform: scaleX(-1);
+}
+
+@keyframes fly {
+    0% {
+        top: 50%;
+        right: -50px;
+        transform: scaleX(-1) rotate(0deg);
+    }
+    25% {
+        top: 20%;
+        right: 30%;
+        transform: scale(1.2) rotate(30deg);
+    }
+    50% {
+        top: 10%;
+        right: 50%;
+        transform: scale(1) rotate(0deg);
+    }
+    75% {
+        top: 80%;
+        right: 70%;
+        transform: scale(1.2) rotate(-30deg);
+    }
+    100% {
+        top: 50%;
+        right: 100%;
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+.figma-section,
+.promovideo-section,
+.instagramdesign-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 50px; /* Adjusted margin between sections */
+    padding: 20px;
+}
+
+.figma-title,
+.promovideo-title,
+.instagramdesign-title {
+    font-size: 36px;
+    color: #DB48A5;
+    font-family: 'Times New Roman', serif;
+    margin-right: 20px;
+}
+
+.figma-image,
+.promovideo-image,
+.instagramdesign-image {
+    width: 300px;
+    height: auto;
+    border: 2px solid #DB48A5; /* Added border to make sure the image is visible */
+}
