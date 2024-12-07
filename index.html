@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <title>Portfolio2</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="pictures/АГ logo.png" class="logo" alt="Logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li class="dropdown">
+                        <a href="#learningoutcome">Learning Outcomes</a>
+                        <div class="dropdown-content">
+                            <a href="LO1.html">LO1</a>
+                            <a href="LO2.html">LO2</a>
+                            <a href="LO3.html">LO3</a>
+                            <a href="LO4.html">LO4</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#portfolio">Projects</a>
+                        <div class="dropdown-content">
+                            <a href="MyWork.html">Brand A Band</a>
+                            <a href="MyWork.html">Campaign project</a>
+                            <a href="MyWork.html">Personal project</a>
+                            <a href="MyWork.html">Development project</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+    
+            <div class="header-name">
+                <h1>Alexa</h1>
+                <h2>Gramatikova</h2>
+                <!-- Flower above the 'G' -->
+                <img src="pictures/flower element.png" alt="Flower above G" class="flower-above-g">
+                <!-- Signature image -->
+                <img src="pictures/signature.png" alt="Signature" class="signature-image">
+                <!-- Blurred flower next to the name -->
+                <img src="pictures/flower element.png" alt="Blurred flower" class="flower-blur">
+            </div>                     
+        </div>
+    </div>
+    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <div class="image-wrapper">
+                        <img src="pictures/me.jpg" alt="Alexa Gramatikova">
+                        <img class="flower" src="pictures/about me flower elemt.png" alt="Flower" />
+                    </div>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-titleAM">About Me</h1>
+                    <p class="paragraphA">
+                        Hey there! I am Alexa but people call me Lex. Both my parents are from Bulgaria, making me fully Bulgarian but with a small twist... I was originally born in Johannesburg, South Africa. I lived there for about 8 years before moving to Sofia, Bulgaria, and now The Netherlands.
+                        I'm all about spreading positivity and helping out with projects. I'm diving into ICT and Media Design, combining creativity, entertainment, and art. I’m excited to make a difference by creating awesome work and providing clients with valuable advice.
+                    </p>                               
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<div id="aboutportfolio">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-3">
+                <h1 class="sub-title">About My Portfolio</h1>
+                <p class="paragraph">
+                    Let me explain the elements featured on each page, as each holds a meaning for me:
+                    <ul>
+                        The flowers i added are called Lillies. 
+                        They are not only my favorite favorite type of flower but mother's as well.<br>
+                        I decided to add the bunny because my uncle gifted my a similar looking one the day after i was born(the first time he ever layed eyes on me).
+                    </ul>
+                </p>                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="learningoutcome">
+    <div class="container">
+        <h1 class="sub-titleLO">
+            My Learning <span class="outcomes">Outcomes</span>
+            <!-- Butterfly Image -->
+            <img src="pictures/butterfly element.png" alt="Butterfly" class="butterfly-icon">
+        </h1>
+        <div class="learningoutcome-list">
+            <a href="LO1.html">
+                <div class="lo1">
+                    <img src="pictures/flower element.png" alt="Flower" class="flower-icon">
+                    <h2>LO1</h2>
+                </div>
+            </a>          
+            <a href="LO2.html">
+                <div class="lo-button">
+                    <h2>LO2</h2>
+                </div>
+            </a>
+            <a href="LO3.html">
+                <div class="lo-button">
+                    <h2>LO3</h2>
+                </div>
+            </a>
+            <a href="LO4.html">
+                <div class="lo-button">
+                    <h2>LO4</h2>
+                </div>
+            </a>
+            <a href="LO5.html">
+                <div class="lo5">
+                    <img src="pictures/flower element.png" alt="Flower" class="flower-icon">
+                    <h2>LO5</h2>
+                </div>
+            </a>            
+        </div>
+    </div>
+</div>
+
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-titleP">Projects
+            <img src="pictures/bow element.png" alt="Bow Element" class="bow-image">
+        </h1>
+        <div class="projects-list">
+            <a href="Brand a band.html">
+                <div class="brand-a-band">
+                    <img src="pictures/bunny element.png" alt="Bunny Element" class="bunny-image">
+                    <h2>Brand a Band</h2>
+                </div>
+            </a>
+            <a href="Campaign project.html">
+                <div>
+                    <h2>Campaign Project</h2>
+                </div>
+            </a>
+            <a href="Personal project.html">
+                <div>
+                    <h2>Personal Project</h2>
+                </div>
+            </a>
+            <a href="Development project.html">
+                <div>
+                    <h2>Development Project</h2>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<div class="glowing-cursor"></div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const cursor = document.querySelector(".glowing-cursor");
+
+        document.addEventListener("mousemove", (e) => {
+            cursor.style.left = `${e.clientX}px`;
+            cursor.style.top = `${e.clientY}px`;
+        });
+
+        // Optional: Add a click effect
+        document.addEventListener("mousedown", () => {
+            cursor.style.transform = "scale(1.5)";
+        });
+
+        document.addEventListener("mouseup", () => {
+            cursor.style.transform = "scale(1)";
+        });
+    });
+</script>
+
+
+<div class="footer">
+    <p class="scrolling-text">Copyright <strong>Aleksa Gramatikova ®</strong> 2024.</p>
+</div>
+
+
+</body>
+</html>
