@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Personal project.css">
+    <title>Portfolio2</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="pictures/АГ logo.png" class="logo" alt="Logo">
+                <ul>
+                    <li><a href="#mainheader">Home</a></li>
+                </ul>
+            </nav>
+            <h1 id="personal-project-title">Personal Project</h1>
+        </div>
+    </div>
+
+    <section id="stuff">
+        <h2>to be continued</h2>
+    </section>
+
+    
+
+
+    <div class="glowing-cursor"></div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const cursor = document.querySelector(".glowing-cursor");
+
+        document.addEventListener("mousemove", (e) => {
+            cursor.style.left = `${e.clientX}px`;
+            cursor.style.top = `${e.clientY}px`;
+        });
+
+        // Optional: Add a click effect
+        document.addEventListener("mousedown", () => {
+            cursor.style.transform = "scale(1.5)";
+        });
+
+        document.addEventListener("mouseup", () => {
+            cursor.style.transform = "scale(1)";
+        });
+    });
+</script>
+
+
+<div class="footer">
+    <p class="scrolling-text">Copyright <strong>Aleksa Gramatikova ®</strong> 2024.</p>
+</div>
+
+</body>
+</html>
