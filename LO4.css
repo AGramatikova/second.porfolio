@@ -11,12 +11,13 @@ body{
     background-color: #FC7ACD;
     color: #000000;
 }
-#header{
+#header {
     width: 100%;
-    height: 100vh;
+    padding: 20px 0; /* Adjust this value as needed */
     background-size: cover;
     background-position: center;
 }
+
 
 .container{
     padding: 10px 10%;
@@ -66,12 +67,13 @@ nav ul li:hover .dropdown-content {
 }
 
 #professional-standart-title {
-    font-size: 3rem; 
-    color: #ffffff; 
+    font-size: 60px;
     text-align: center;
-    margin-top: 90px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-top: 20px; /* Reduced space between the title and the top */
     font-weight: bold;
+    font-family: 'Times New Roman', serif;
+    color: #DB48A5;
+    text-shadow: 3px 3px 5px rgba(255, 255, 255, 0.7);
 }
 .paragraph {
     text-align: center;
@@ -98,6 +100,7 @@ section {
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 10px;
+    margin-bottom: 250px;
 }
 
 .content p {
@@ -113,4 +116,28 @@ section {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-left: 15px;
+}
+
+
+.glowing-cursor {
+    position: fixed;
+    width: 12px;
+    height: 15px;
+    border-radius: 100%;
+    pointer-events: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.967), 
+                0 0 30px rgba(232, 50, 141, 0.5); 
+    transform: translate(-50%, -50%);
+    z-index: 9999; 
+    transition: transform 0.05s ease-out; 
+}
+.footer {
+    background-color: #DB48A5; 
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0; 
+    font-size: 14px; 
+    font-family: 'Poppins', sans-serif; 
+    overflow: hidden; 
+    position: relative; 
 }
