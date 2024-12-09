@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Development project.css">
+    <title>Portfolio2</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="pictures/АГ logo.png" class="logo" alt="Logo">
+                <ul>
+                    <li><a href="#mainheader">Home</a></li>
+                </ul>
+            </nav>
+            <h1 id="development-project-title">Development Project</h1>
+        </div>
+    </div>
+
+    <section id="introduction-section">
+        <h2>Introduction</h2>
+        <div class="content">
+            <p>
+                For this project, me and my group member had to design a post-punk themed website. The client was Nasmak Pm and they wanted the website to be only for their upcoming dance night. I started by researching how such a website should look and what key elements we needed, like a section for buying tickets. After that, I created the design in Figma, keeping the post-punk style in mind. Once I was happy with the design, I set up a Trello board to organize the tasks, we split up the work easily since there were only 8 pages to build.
+
+                I worked on 4 of those pages and did some research to figure out what kind of questions should be included in the FAQ section. The biggest challenge for me was working with Blender since it was my first time using it. It was tough at first, but as I kept practicing, I started getting the hang of it. I wasn't able to add Blender content to the ‘About the Band’ page yet, but that's something I’m working on figuring out now.
+                
+                Once the pages were done, I did a user test where I had two people scroll through the site and give me feedback. One of the main things they pointed out was that some elements, like the countdown, were in the wrong order. For example, it would work better if the countdown came after the introduction.
+                
+                Through this project, I learned a lot about using Blender, JavaScript, and even picked up a few coding tricks along the way. It was a great hands-on experience that helped me grow in both design and development.
+            </p>
+            <img src="pictures/Screenshot development.png" alt="introduction Image" class="section-image">
+            <img src="pictures/Screenshot blender.png" alt="introduction Image" class="section-image">
+            <img src="pictures/Screenshot trello.png" alt="introduction Image" class="section-image">
+        </div>
+    </section>
+    
+
+
+    <div class="glowing-cursor"></div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const cursor = document.querySelector(".glowing-cursor");
+
+        document.addEventListener("mousemove", (e) => {
+            cursor.style.left = `${e.clientX}px`;
+            cursor.style.top = `${e.clientY}px`;
+        });
+
+        // Optional: Add a click effect
+        document.addEventListener("mousedown", () => {
+            cursor.style.transform = "scale(1.5)";
+        });
+
+        document.addEventListener("mouseup", () => {
+            cursor.style.transform = "scale(1)";
+        });
+    });
+</script>
+
+
+<div class="footer">
+    <p class="scrolling-text">Copyright <strong>Aleksa Gramatikova ®</strong> 2024.</p>
+</div>
+
+</body>
+</html>
