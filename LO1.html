@@ -12,29 +12,145 @@
             <nav>
                 <img src="pictures/АГ logo.png" class="logo" alt="Logo">
                 <ul>
-                    <li><a href="#header">Home</a></li>
+                    <li><a href="#mainheader">Home</a></li>
                 </ul>
             </nav>
             <h1 id="interactive-title">Interactive Media Products</h1>
             <p class="paragraph">figma prototype/promo video/instagram design</p>
-            
+            <img src="pictures/butterfly element.png" id="flying-butterfly" alt="Flying Butterfly">
+
             <div class="figma-section">
                 <h2 class="figma-title">Figma Prototype</h2>
-                <img src="pictures/updated version.png" alt="Figma Prototype Image" class="figma-image">
+                <div class="figma-progress">
+                    <img src="pictures/canvas.prototype.jpeg" alt="Figma Prototype Initial Version" class="figma-image modal-trigger">
+                    <span class="arrow">➔</span>
+                    <img src="pictures/1.figma.prototype.jpeg" alt="Figma Prototype Updated Version" class="figma-image modal-trigger">
+                    <span class="arrow">➔</span>
+                    <img src="pictures/2.figma.prototype.jpg" alt="Figma Prototype Final Version" class="figma-image modal-trigger figma-large-image">
+                </div>
+                <p class="figma-paragraph">
+                    My first idea for my portfolio was to make floating bubbles so I created one in Canva. 
+                    I showed it to my teacher, Stan, who gave me a couple of ideas and helped me visualize them. 
+                    We both decided that the bubbles aren’t what I was looking for.<br><br>
+                    The final design I would like to stick to is pink-themed with my favorite type of flower. 
+                    I added my own signature, with the help of Stan, on the homepage to give more of a personal meaning to my portfolio. 
+                    My goal is to add butterflies that fly around the screen and flowers that slightly open and close as well.<br><br>
+                    After getting feedback from two of my teachers about my portfolio design, they mentioned that the flowers were too distracting and took attention away from my name. They said it looked more like a flower shop than a portfolio, and I completely agreed. Their feedback was really helpful because they noticed something I hadn’t seen before, which is why getting a second opinion is so important.<br><br>
+                    To fix this, I decided to blur the flowers on the homepage so my name stands out more. I also went with the first design, where the flowers are on the sides, to make sure my name stays the main focus. 
+                </p>
             </div>
 
             <div class="promovideo-section">
-                <h2 class="figma-title">Promo Video</h2>
-                <img src="pictures/updated version.png" alt="Promo Video Image" class="promovideo-image">
+                <h2 class="promovideo-title">Promo Video</h2>
+                <div class="promovideo-content">
+                    <!-- Video element -->
+                    <video id="promoVideo" class="promovideo-video" width="300" controls>
+                        <source src="pictures/Promo Video 2024-10-01 at 18.05.12.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="promovideo-link-container">
+                        <!-- Button to play the video -->
+                        <button id="playPromoVideo" class="promovideo-link">Watch the Promo Video</button>
+                    </div>
+                </div>
+                <p class="promovideo-paragraph">
+                    I was assigned to create the promo video. Because it was my first time doing one, I asked my teammate Miya for a hand. 
+                    I created the first part of the video with CapCut and InShot, and the rest I got some clips from YouTube of building R13.<br><br>
+                    My inspiration came mostly from TikTok. I searched for promo video ideas and combined all the ones I came across into one.
+                </p>
             </div>
+            
 
             <div class="instagramdesign-section">
-                <h2 class="figma-title">Instagram Design</h2>
-                <img src="pictures/IMG_8133.PNG" alt="Instagram Design Image" class="instagramdesign-image">
+                <h2 class="instagramdesign-title">Instagram Design</h2>
+                <div class="instagramdesign-content">
+                    <div class="instagramdesign-left">
+                        <img src="pictures/IMG_8133.PNG" alt="Instagram Design Image" class="instagramdesign-image modal-trigger">
+                        <a href="https://www.instagram.com/projectp_m?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="instagramdesign-link">Visit Instagram Page</a>
+                    </div>
+                    <div class="instagramdesign-text">
+                        <p class="instagramdesign-paragraph">
+                            I wanted to be assigned to create the updated Instagram page of the band because I enjoy working with social media and just in general stuff connected with it. 
+                            The first thing I changed was their bio. I felt the existing one had too much information, so I simplified it by adding just the key details about the band. I kept the profile picture the same because I think it’s really eyecatching and would make people curious to check out their page.<br><br>
+                            I also added highlights to make the page more organized and visually appealing. Each highlight had its own theme: the first one featured stories of the band performing or practicing, the second one was a QR code linking to their Instagram for easy sharing, and the last one was a Spotify highlight with their account and all of their released albums.<br><br>
+                            For the photos, I carefully selected a few images of the band from the internet, making sure they either had the same color palette or gave off a similar vibe.<br><br>
+                            Finally, I added some custom posters created by me and my group to give the page a unique touch.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <img src="pictures/butterfly element.png" id="flying-butterfly" alt="Flying Butterfly">
+    <div id="image-modal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <div id="modal-caption"></div>
+    </div>
+
+    <script> 
+        // Modal functionality for fullscreen image display
+document.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('image-modal');
+    const modalImg = document.getElementById('modal-image');
+    const captionText = document.getElementById('modal-caption');
+    const closeModal = document.querySelector('.modal-close');
+
+    document.querySelectorAll('.modal-trigger').forEach(img => {
+        img.addEventListener('click', () => {
+            modal.style.display = 'block';
+            modalImg.src = img.src;
+            captionText.innerText = img.alt;
+        });
+    });
+
+    closeModal.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+});
+
+    // Get the video and button elements
+    const promoVideo = document.getElementById('promoVideo');
+    const playButton = document.getElementById('playPromoVideo');
+
+    // Add an event listener to the button
+    playButton.addEventListener('click', () => {
+        // Play the video
+        promoVideo.play();
+    });
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const cursor = document.querySelector(".glowing-cursor");
+
+        document.addEventListener("mousemove", (e) => {
+            cursor.style.left = `${e.clientX}px`;
+            cursor.style.top = `${e.clientY}px`;
+        });
+
+        // Optional: Add a click effect
+        document.addEventListener("mousedown", () => {
+            cursor.style.transform = "scale(1.5)";
+        });
+
+        document.addEventListener("mouseup", () => {
+            cursor.style.transform = "scale(1)";
+        });
+    });
+    </script>
+
+
+
+<div class="glowing-cursor"></div>
+
+<div class="footer">
+    <p class="scrolling-text">Copyright <strong>Aleksa Gramatikova ®</strong> 2024.</p>
+</div>
+
 </body>
 </html>
