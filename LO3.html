@@ -12,47 +12,130 @@
             <nav>
                 <img src="pictures/АГ logo.png" class="logo" alt="Logo">
                 <ul>
-                    <li><a href="#header">Home</a></li>
+                    <li><a href="#mainheader">Home</a></li>
                 </ul>
             </nav>
-            <h1 id="interactive-design-title">Iterative Design</h1>
+            <h1 id="interative-design-title">Iterative Design</h1>
             <p class="paragraph">stylescapes/posters/logo design/instagram design</p>
-
+            <img src="pictures/bunnyballon.png" id="bunny-ballon" alt="bunny ballon">
         </div>
     </div>
 
+
     <section id="stylescapes">
         <h2>Stylescapes</h2>
-        <div class="content">
-            <p>This is my portfolio showcasing the projects I've worked on. It includes a variety of development and design projects, each demonstrating my skills and experience in web development, UI/UX, and version control.</p>
-            <img src="path_to_your_image/portfolio_image.jpg" alt="Stylescapes Image" class="section-image">
+        <div class="stylescapes-container">
+            <div class="stylescape-item">
+                <h3>Stylescape 1</h3>
+                <img src="pictures/1stylescape.jpg" alt="Stylescape 1 Image" class="stylescape-image" onclick="openModal('pictures/1stylescape.jpg')">
+                <p>For the stylescape we divided each other in two groups to create as much as possible options. For my group it was myself, Miya and Justin. The initial design we created was primarily focused on aligning with Fontys' color palette...</p>
+            </div>
+            <div class="stylescape-item">
+                <h3>Stylescape 2</h3>
+                <img src="pictures/2stylescape.jpg" alt="Stylescape 2 Image" class="stylescape-image" onclick="openModal('pictures/2stylescape.jpg')">
+                <p>The second idea. I gave the suggestion to be more colorful and eye catching. Each one of us got a bunch of images and then together decided which fit better...</p>
+            </div>
         </div>
     </section>
 
-    <section id="posters">
+    <section id="poster-title">
         <h2>Posters</h2>
-        <div class="content">
-            <p>The Nasmak PM project is an ongoing development that focuses on project management and collaboration tools. My role involves handling the full-stack development, including both front-end and back-end processes.</p>
-            <img src="path_to_your_image/nasmak_pm_image.jpg" alt="posters image" class="section-image">
+        <div class="poster-images">
+            <div class="poster-item">
+                <img src="pictures/NASMAK POSTER1.png" alt="Poster 1">
+                <p>
+                For the first poster I made, I wanted to match the theme of the band Nasmak’s website.<br>
+                I did some research about the band members so I could include pictures of them, and I also added an image I found online that fit the vibe.<br>
+                I picked an electric-font because it represents the electric instruments they use, which I thought was important for their audience to notice.
+                </p>
+            </div>
+            <div class="poster-item">
+                <img src="pictures/NASMAK POSTER2.png" alt="Poster 2">
+                <p>
+                For the second poster, I researched 'postpunk' and 'new wave,' which are the band’s genres.<br>
+                I noticed that the style for these genres includes sharp and colorful elements, so I chose ones that I thought were appealing and eye-catching.<br>
+                I also reused the electric font from the first poster to keep some consistency.
+                </p>
+            </div>
+            <div class="poster-item">
+                <img src="pictures/NASMAK POSTER3.png" alt="Poster 3">
+                <p>
+                This poster has a backstory: Nasmak PM had their very first practice in a chicken coop. To reflect that, I decided to include a chicken in the background<br>
+                I went with a simple design but added a pop of red for contrast. To make it clear that the poster is for an upcoming event, I added an outline of a concert ticket to display the key information.
+                </p>
+            </div>
         </div>
     </section>
+    
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
 
     <section id="logo design">
         <h2>Logo Design</h2>
         <div class="content">
-            <p>The Nasmak PM project is an ongoing development that focuses on project management and collaboration tools. My role involves handling the full-stack development, including both front-end and back-end processes.</p>
-            <img src="path_to_your_image/nasmak_pm_image.jpg" alt="logo design image" class="section-image">
+            <p>
+                The group came up with the idea for each one member to create some logos in their own taste and then all together to decide which one looks best. 
+                I created these two with the ideas of a plus sign +. I connect it with health and positivity. 
+                And as well it is very easily remembered for our target audience.
+            </p>
+            <img src="pictures/projectlogos.jpg" alt="logo design image" class="section-image">
         </div>
     </section>
 
     <section id="instagram design">
         <h2>Instagram Design</h2>
         <div class="content">
-            <p>The Nasmak PM project is an ongoing development that focuses on project management and collaboration tools. My role involves handling the full-stack development, including both front-end and back-end processes.</p>
-            <img src="path_to_your_image/nasmak_pm_image.jpg" alt="instahram design image" class="section-image">
+            <p>
+            I wanted to be assigned to create the updated Instagram page of the band because I enjoy working with social media and just in general stuff connected with it. 
+            The first thing I changed was their bio. I felt the existing one had too much information, so I simplified it by adding just the key details about the band. I kept the profile picture the same because I think it’s really eyecatching and would make people curious to check out their page.
+            I also added highlights to make the page more organized and visually appealing. Each highlight had its own theme: the first one featured stories of the band performing or practicing, the second one was a QR code linking to their Instagram for easy sharing, and the last one was a Spotify highlight with their account and all of their released albums.
+            For the photos, I carefully selected a few images of the band from the internet, making sure they either had the same color palette or gave off a similar vibe. 
+            Finally, I added some custom posters created by me and my group to give the page a unique touch.            
+            </p>
+            <img src="pictures/IMG_8133.PNG" alt="instagram design image" class="instagram-image">
         </div>
     </section>
 
+    <script>
+        // Open Modal
+        function openModal(imageSrc) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+        
+            modal.style.display = 'block';
+            modalImg.src = imageSrc;
+        }
+        
+        // Close Modal
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.style.display = 'none';
+        }
 
+        document.addEventListener("DOMContentLoaded", function() {
+            const cursor = document.querySelector(".glowing-cursor");
+
+            document.addEventListener("mousemove", (e) => {
+                cursor.style.left = `${e.clientX}px`;
+                cursor.style.top = `${e.clientY}px`;
+            });
+
+            // Optional: Add a click effect
+            document.addEventListener("mousedown", () => {
+                cursor.style.transform = "scale(1.5)";
+            });
+
+            document.addEventListener("mouseup", () => {
+                cursor.style.transform = "scale(1)";
+            });
+        });
+    </script>
+
+    <div class="footer">
+        <p class="scrolling-text">Copyright <strong>Aleksa Gramatikova ®</strong> 2024.</p>
+    </div>
 </body>
 </html>
