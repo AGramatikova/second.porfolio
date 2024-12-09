@@ -12,29 +12,74 @@
             <nav>
                 <img src="pictures/АГ logo.png" class="logo" alt="Logo">
                 <ul>
-                    <li><a href="#header">Home</a></li>
+                    <li><a href="#mainheader">Home</a></li>
                 </ul>
             </nav>
-            <h1 id="personal-leadership-title">Personal Leadership</h1>
-            <p class="paragraph">project plan assistance/promo video collaboration</p>
         </div>
     </div>
 
-    <section id="Project plan assistance">
-        <h2>Project plan assistance</h2>
-        <div class="content">
-            <p>This is my portfolio showcasing the projects I've worked on. It includes a variety of development and design projects, each demonstrating my skills and experience in web development, UI/UX, and version control.</p>
-            <img src="path_to_your_image/portfolio_image.jpg" alt="Project plan assistance Image" class="section-image">
-        </div>
+<div id="title-section">
+    <img src="pictures/flower element.png" alt="Flower Element" id="flower-element">
+    <h1 id="personal-leadership-title">Personal Leadership</h1>
+</div>
+
+
+    <section id="introduction-section">
+        <p class="paragraph">I wouldn't describe myself as the leader in group projects, but rather as an innovator. My core values are creativity, positivity, acceptance, teamwork, and ensuring tasks are completed on time. While I always encourage collaboration, I’m not afraid to push my teammates when necessary to ensure deadlines are met. I also value feedback and frequently seek second opinions from those around me to ensure that my work aligns with both my vision and the perspectives of others.</p>
     </section>
 
-    <section id="promo video collaboration">
-        <h2>Promo Video Collaboration</h2>
-        <div class="content">
-            <p>This is my portfolio showcasing the projects I've worked on. It includes a variety of development and design projects, each demonstrating my skills and experience in web development, UI/UX, and version control.</p>
-            <img src="path_to_your_image/portfolio_image.jpg" alt="Stylescapes Image" class="section-image">
-        </div>
-    </section>
+    <div id="content">
+        <section id="feedback-section">
+            <h2>Feedback</h2>
+            <div class="content-row">
+                <p>Seeking feedback is an essential part of my workflow. I believe collaboration brings out the best in projects, and I actively involve my peers to refine ideas and solutions. Their input helps ensure that our work is inclusive, polished, and effective.</p>
+                <img src="pictures/feedback.png" alt="Feedback illustration">
+            </div>
+        </section>
 
+        <section id="target-audience-section">
+            <h2>Target Audience</h2>
+            <div class="content-row">
+                <img src="pictures/nasmak target audience.png" alt="Target Audience illustration">
+                <p>was assigned to write the target audience section for the band, so I did some research before starting. I included what the band told us about wanting to attract a younger audience to listen to their music. 
+                    In the document, I also wrote about where we could help them find this target group. 
+                    For example, using social media platforms like Instagram, TikTok, and YouTube, which are popular with younger people. I also suggested promoting the band through events or collaborations that younger audiences would be interested in, like music festivals or working with influencers in the post-punk and new wave scenes. 
+                    By combining my research with the band's input, I tried to create a plan that would help them reach the audience they want.
+                </p>
+            </div>
+        </section>
+
+        <section id="trello-board-section">
+            <h2>Trello Board</h2>
+            <div class="content-row">
+                <p>Trello is my go-to tool for organizing tasks and ensuring efficient teamwork. It helps keep everyone on track by clearly defining responsibilities, deadlines, and progress updates. This collaborative tool is vital for achieving project success.</p>
+                <img src="pictures/Screenshot trello.png" alt="Trello Board illustration">
+            </div>
+        </section>
+    </div>
+
+    <div class="glowing-cursor"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const cursor = document.querySelector(".glowing-cursor");
+
+            document.addEventListener("mousemove", (e) => {
+                cursor.style.left = `${e.clientX}px`;
+                cursor.style.top = `${e.clientY}px`;
+            });
+
+            document.addEventListener("mousedown", () => {
+                cursor.style.transform = "scale(1.5)";
+            });
+
+            document.addEventListener("mouseup", () => {
+                cursor.style.transform = "scale(1)";
+            });
+        });
+    </script>
+
+    <div class="footer">
+        <p class="scrolling-text">Copyright <strong>Aleksa Gramatikova ®</strong> 2024.</p>
+    </div>
 </body>
 </html>
