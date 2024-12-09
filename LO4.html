@@ -12,22 +12,53 @@
             <nav>
                 <img src="pictures/АГ logo.png" class="logo" alt="Logo">
                 <ul>
-                    <li><a href="#header">Home</a></li>
+                    <li><a href="#mainheader">Home</a></li>
                 </ul>
             </nav>
             <h1 id="professional-standart-title">Professional Standard</h1>
-            <p class="paragraph">porfolio design</p>
+            <p class="paragraph">porfolio design/project design</p>
         </div>
     </div>
 
     <section id="porfolio design">
         <h2>Portfolio Design</h2>
         <div class="content">
-            <p>This is my portfolio showcasing the projects I've worked on. It includes a variety of development and design projects, each demonstrating my skills and experience in web development, UI/UX, and version control.</p>
-            <img src="path_to_your_image/portfolio_image.jpg" alt="portfolio design Image" class="section-image">
+            <p>
+                I did a user test on my portfolio and development project with two people. Jo-An gave me some helpful feedback. She liked my portfolio idea but suggested I make my name and message stand out more instead of the flower design, which made it feel like a flower shop. So, I decided to simplify the design and blur some elements to keep the focus on my name and message.
+
+For the development project, Jo-An said the order of the pages didn’t make sense. For example, the countdown should come after the introduction, not before. I’ll adjust the order to make the flow more logical.
+            </p>
+            <img src="pictures/Screenshot 2024-12-09 at 17.11.51.png" alt="portfolio design Image" class="section-image">
         </div>
     </section>
 
+
+
+    <div class="glowing-cursor"></div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const cursor = document.querySelector(".glowing-cursor");
+
+        document.addEventListener("mousemove", (e) => {
+            cursor.style.left = `${e.clientX}px`;
+            cursor.style.top = `${e.clientY}px`;
+        });
+
+        // Optional: Add a click effect
+        document.addEventListener("mousedown", () => {
+            cursor.style.transform = "scale(1.5)";
+        });
+
+        document.addEventListener("mouseup", () => {
+            cursor.style.transform = "scale(1)";
+        });
+    });
+</script>
+
+
+<div class="footer">
+    <p class="scrolling-text">Copyright <strong>Aleksa Gramatikova ®</strong> 2024.</p>
+</div>
 
 </body>
 </html>
