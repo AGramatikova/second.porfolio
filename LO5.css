@@ -11,12 +11,12 @@ html {
 
 body {
     background-color: #FC7ACD;
-    color: #000000;
+    color: #ffffff;
 }
 
 #header {
     width: 100%;
-    padding: 20px 10%; /* Adjust the left and right padding to create space */
+    padding: 20px 10%; 
     background-size: cover;
     background-position: center;
 }
@@ -26,7 +26,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 100%; /* Ensure nav takes full width */
+    width: 100%; 
 }
 
 .logo {
@@ -72,7 +72,7 @@ nav ul li a:hover::after {
 #flower-element {
     position: absolute;
     top: -47px;
-    left: 70%; /* Ensure flower is centered horizontally */
+    left: 70%; 
     transform: translateX(-50%) rotate(-290deg); 
     filter: blur(0.9px); 
     z-index: 2;
