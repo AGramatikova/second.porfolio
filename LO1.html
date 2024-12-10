@@ -89,7 +89,7 @@
     </div>
 
     <script> 
-        // Modal functionality for fullscreen image display
+        // Modal for fullscreen image 
 document.addEventListener('DOMContentLoaded', () => {
     const modal = document.getElementById('image-modal');
     const modalImg = document.getElementById('modal-image');
@@ -115,13 +115,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-    // Get the video and button elements
+    // video and button elements
     const promoVideo = document.getElementById('promoVideo');
     const playButton = document.getElementById('playPromoVideo');
 
-    // Add an event listener to the button
+    // add an event listener to the button
     playButton.addEventListener('click', () => {
-        // Play the video
         promoVideo.play();
     });
 
@@ -133,7 +132,6 @@ document.addEventListener('DOMContentLoaded', () => {
             cursor.style.top = `${e.clientY}px`;
         });
 
-        // Optional: Add a click effect
         document.addEventListener("mousedown", () => {
             cursor.style.transform = "scale(1.5)";
         });
