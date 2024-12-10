@@ -54,7 +54,7 @@ nav ul li a:hover::after {
 }
 #header {
     width: 100%;
-    padding: 20px 0; /* Adjust this value as needed */
+    padding: 20px 0; 
     margin-bottom: 60px;
     background-size: cover;
     background-position: center;
@@ -70,12 +70,12 @@ nav ul li a:hover::after {
 #interative-design-title {
     font-size: 60px;
     text-align: center;
-    margin-top: 20px; /* Reduced space between the title and the top */
+    margin-top: 20px; 
     font-weight: bold;
     font-family: 'Times New Roman', serif;
     color: #DB48A5;
     text-shadow: 3px 3px 5px rgba(255, 255, 255, 0.7);
-    margin-bottom: 0; /* Remove extra bottom margin */
+    margin-bottom: 0; 
 
 }
 
@@ -85,7 +85,7 @@ nav ul li a:hover::after {
     color: white;
 }
 
-/* Section Styles */
+/* section styles */
 h2 {
     font-size: 36px;
     color: #DB48A5;
@@ -96,7 +96,7 @@ h2 {
 
 
 section {
-    margin-top: -50px; /* Reduced spacing between sections */
+    margin-top: -50px; 
     padding: 10px 10%;
 }
 
@@ -123,7 +123,7 @@ section {
     margin-left: 15px;
 }
 
-/* Stylescapes Section */
+/* stylescapes section */
 .stylescapes-container {
     display: flex;
     flex-direction: column;
@@ -134,17 +134,17 @@ section {
 .stylescape-item {
     display: flex;
     align-items: center;
-    margin-bottom: 30px; /* More space between items */
+    margin-bottom: 30px; 
 }
 
 .stylescape-item h3 {
-    font-size: 28px; /* Increased size */
+    font-size: 28px; 
     color: #DB48A5;
     margin-right: 15px;
 }
 
 .stylescape-image {
-    width: 180px;  /* Increased size */
+    width: 180px;  
     height: 180px;
     object-fit: cover;
     border-radius: 8px;
@@ -164,7 +164,7 @@ section {
     max-width: 600px;
 }
 
-/* Instagram Design - Smaller size */
+/* Instagram design */
 .instagram-image {
     width: 20%; /* Smaller */
     height: auto;
@@ -173,7 +173,7 @@ section {
     margin-left: 15px;
 }
 
-/* Modal Styles */
+/* modal styles */
 .modal {
     display: none;
     position: fixed;
@@ -189,7 +189,7 @@ section {
 .modal-content {
     margin: auto;
     display: block;
-    width: 80%;  /* Larger size */
+    width: 80%;  
     max-width: 1200px;
     object-fit: contain;
 }
@@ -239,7 +239,7 @@ section {
     position: relative;
 }
 
-/* New Poster Section */
+/* poster section */
 #poster-title {
     margin-top: 50px;
     text-align: center;
@@ -271,28 +271,28 @@ section {
 
 #bunny-ballon {
     position: absolute;
-    top: -100px;  /* Start just above the screen */
-    right: 20px;  /* Position from the right (adjust as needed) */
-    width: 200px;  /* Set the size */
-    height: auto;  /* Maintain aspect ratio */
-    animation: fly 15s linear infinite;  /* Slow animation over 15 seconds */
-    transform: scaleX(-1);  /* Mirror the image */
+    top: -100px;  /* Start  above the screen */
+    right: 20px;  
+    width: 200px;  
+    height: auto;  
+    animation: fly 15s linear infinite;  
+    transform: scaleX(-1);  
 }
 
 @keyframes fly {
     0% {
-        top: -100px;  /* Start just off-screen at the top */
-        right: 20px;  /* Keep the same position from the right */
-        transform: scaleX(-1) rotate(0deg);  /* Initial rotation and flip */
+        top: -100px;  /* Start off-screen at the top */
+        right: 20px; 
+        transform: scaleX(-1) rotate(0deg); 
     }
     50% {
-        top: 50%;  /* Center vertically */
-        right: 20px;  /* Keep the horizontal position */
-        transform: scaleX(-1) rotate(5deg);  /* Slight rotation for smooth movement */
+        top: 50%; 
+        right: 20px; 
+        transform: scaleX(-1) rotate(5deg);  
     }
     100% {
-        top: 100%;  /* Move to the bottom of the screen */
-        right: 20px;  /* Keep the horizontal position fixed */
-        transform: scaleX(-1) rotate(0deg);  /* Reset rotation */
+        top: 100%;  /* Move to the bottom */
+        right: 20px;  
+        transform: scaleX(-1) rotate(0deg);  
     }
 }
