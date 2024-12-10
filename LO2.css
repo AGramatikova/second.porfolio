@@ -63,7 +63,7 @@ nav ul li a:hover::after {
 
 #header {
     width: 100%;
-    padding: 15px 0; /* Adjust this value as needed */
+    padding: 15px 0;
     background-size: cover;
     background-position: center;
 }
@@ -75,12 +75,12 @@ nav ul li a:hover::after {
 #development-title {
     font-size: 60px;
     text-align: center;
-    margin-top: 20px; /* Reduced space between the title and the top */
+    margin-top: 20px; 
     font-weight: bold;
     font-family: 'Times New Roman', serif;
     color: #DB48A5;
     text-shadow: 3px 3px 5px rgba(255, 255, 255, 0.7);
-    margin-bottom: 0; /* Remove extra bottom margin */
+    margin-bottom: 0; 
 }
 
 .paragraph {
@@ -99,7 +99,7 @@ h2 {
 section {
     margin-top: 10px;
     padding: 10px 10%;
-    margin-bottom: 50px; /* Adding space between the last image and the footer */
+    margin-bottom: 50px; 
 }
 
 .content {
@@ -111,13 +111,13 @@ section {
 }
 
 .content p {
-    width: 100%; /* Make the text container full width */
+    width: 100%; 
     font-size: 18px;
     color: #333;
     line-height: 1.6;
-    text-align: justify; /* Justify the text */
-    margin-top: 20px; /* Add some space above the text */
-    margin-bottom: 30px; /* Add space between text and next section or footer */
+    text-align: justify; 
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .section-image {
@@ -207,7 +207,6 @@ body::before {
     margin-top: 10px;
 }
 
-/* Additional Styling for Portfolio Texts and Images */
 #portfolio .content {
     margin-top: 40px;
     display: flex;
