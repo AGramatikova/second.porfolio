@@ -1,3 +1,4 @@
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -59,7 +60,7 @@ nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #c24040;
+    background: #ffffff;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -166,6 +167,8 @@ nav ul li a:hover::after {
     color: #333;
     font-family: Arial, sans-serif;
     max-width: 800px;
+    margin-bottom: 3%;
+    text-align: left;
 }
 .promovideo-section {
     display: flex;
@@ -228,6 +231,8 @@ nav ul li a:hover::after {
     color: #333;
     font-family: Arial, sans-serif;
     max-width: 800px;
+    margin-bottom: 3%;
+    text-align: left;
 }
 
 
@@ -295,6 +300,7 @@ nav ul li a:hover::after {
     line-height: 1.8;
     color: #333;
     font-family: Arial, sans-serif;
+    margin-bottom: 3%;
 }
 
 /* Fullscreen modal */
